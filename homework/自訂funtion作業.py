@@ -1,4 +1,9 @@
 def get_bmi() :
+    '''
+    計算BMI值
+    '''
+    
+    
     height = float(input('請輸入身高120-250cm):'))
     if not (120 <= height <= 250):
         print('身高範圍輸入錯誤')
@@ -9,7 +14,12 @@ def get_bmi() :
     return round(BMI,1)
 
 
-def get_status(BMI) :   
+def get_status(BMI) :
+    '''
+    判斷BMI狀態
+    '''
+    
+       
     if BMI < 18.5:
         x = '體重過輕'
     elif 18.5 <= BMI < 24:
